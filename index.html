@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unionfam Global International</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <a class="navbar-brand" href="#">
+            <img src="img/ugi.png" alt="Unionfam Global International Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-3">
+                    <a class="nav-link text-success" href="#home">Home</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link text-success" href="#services">Services</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link text-success" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home" class="container section">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="img/home.JPG" alt="Home Photo" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>Welcome to Unionfam Global International. We are a leading company in providing top-notch services to our clients worldwide. Our mission is to deliver exceptional value and exceed customer expectations through innovative solutions and a commitment to excellence.</p>
+                <p>Our team of professionals is dedicated to ensuring the success of every project we undertake. We believe in building strong, long-lasting relationships with our clients based on trust, integrity, and mutual respect.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="container section">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4 d-flex">
+                <div class="card flex-fill">
+                    <div class="card-img-wrapper">
+                        <img src="img/services.JPG" class="card-img-top" alt="Mechanical engineering">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mechanical Engineering</h5>
+                        <p class="card-text">We provide expert mechanical engineering services to meet all your needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="card flex-fill">
+                    <div class="card-img-wrapper">
+                        <img src="img/services2.JPG" class="card-img-top" alt="Equipment maintenance">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Equipment Maintenance</h5>
+                        <p class="card-text">Our team offers top-notch maintenance services to keep your equipment running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="card flex-fill">
+                    <div class="card-img-wrapper">
+                        <img src="img/services3.JPG" class="card-img-top" alt="System installations">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">System Installations</h5>
+                        <p class="card-text">We provide professional system installation services to ensure efficient operation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+
+    <div id="contact" class="container section">
+        <div class="map-frame mb-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d498.6422965095519!2d103.9307431289263!3d1.0578039236881795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1721187948449!5m2!1sid!2sid" 
+                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <h2>Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h4>Contact Information</h4>
+                <br>
+                <p><strong>Address:</strong> Kawasan Bintang Industrial Park II
+                    Blok D No. 53A - Jl. Brigjen Katamso
+                    Tanjung Uncang, Batu Aji
+                    Batam, Kepulauan Riau 29425 Indonesia</p>
+                <p><strong>Phone:</strong> +0778 391200</p>
+                <p><strong>Email:</strong> info@unionfamglobal.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
